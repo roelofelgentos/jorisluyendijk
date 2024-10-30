@@ -1,0 +1,166 @@
+/*
+
+Theme Name: Mobius Child Theme
+Template: mobius
+Author: ThemeOne
+Author URI: http://www.theme-one.com
+Description: A Multipurpose and Ultra Responsive theme for Corporate/Blog/Portfolio website.
+Version: 1.0
+Tags: one-column, two-columns, left-sidebar, right-sidebar, fluid-layout, custom-menu, full-width-template, sticky-post, theme-options, translation-ready
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public License
+version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+*/
+
+/*Custom BP Styling*/
+
+.to-item-cat,
+.to-item-social,
+.post-information{
+	display: none;
+}
+
+.boekdb .etalage {background:none transparent !important;}
+.boekdb .orderinformation a {border-radius:14px;-webkit-border-radius: 14px;-moz-border-radius: 14px;}
+.boekdb .orderinformation a.order, .boekdb .orderinformation a.order:hover {color:#FFFFFF;background-color:#E45B30;text-decoration:none;}
+#inner-container a:link {text-decoration:underline;}
+#inner-container .boekdb .orderinformation a.order:link,
+#inner-container #error-404 a:link{text-decoration: none;}
+#inner-container .section-container iframe{max-height:340px !important;max-width:100% !important}
+.to-slide .to-slide-content-inner .to-button {margin-top:0;}
+#footer-social a {width:auto;font-size:13px;}
+.fa-twitter:before {font-size:18px;padding-left:5px;}
+#inner-container .to-grid-scroll .to-item .excerpt p {padding-bottom:15px;}
+.to-grid-scroll .to-item.blog .excerpt {max-height:380px;}
+.to-grid-scroll .to-item[data-cat=""] h2 {float:right;width:70%;text-align:left;margin:0;}
+#inner-container .to-grid-scroll .to-item h2 a:link{text-decoration: none;}
+.to-grid-scroll .to-item[data-cat=""] .to-item-date {float:left;width:25%;margin-right:5%;text-align:left;border-top:10px solid #E45B30;background:#F5F6FA;}
+.to-grid-scroll .to-item[data-cat=""] .to-item-date span {float:left;width:100%;font-style:normal;text-align:center;}
+.to-grid-scroll .to-item[data-cat=""] .to-item-date span:first-of-type{font-size:24px;font-weight:bold;}
+.to-grid-scroll .to-item[data-cat=""] .to-item-date span:last-of-type{text-transform: lowercase;}
+.to-grid-scroll .to-item[data-cat=""] .excerpt {float:left;margin-left:30%;width:70%;text-align:left;}
+.to-grid-scroll .to-item[data-cat=""] .to-item-separator {float:left;width:100%;}
+#inner-container .boekdb {width:98%;padding-top:2%;}
+#copyright span.highlight {float:left;font-size:16px;padding-bottom:10px;}
+.to-item.blog.tall[data-cat=""] .to-item-content, .to-item.blog.square.top.Agenda .to-item-content {top:0 !important;right:0 !important;bottom:0 !important;left:0 !important;}
+#single-post-section .post-image {width:auto;}
+.home .to-item,
+.home .to-item.Nieuws .excerpt,
+.home .to-item[data-cat=""] .excerpt{display:block !important;}
+@media screen and (max-width: 480px) {
+    #search-container input.search{font-size:16px;}
+   
+}
+@media screen and (max-width: 680px) {
+    
+    #to-slider, #to-slider-holder { display: none; }
+}
+.to-page-heading .title,
+.single-title {
+	color:white !important;
+}
+
+
+.archive .headerColor {
+	background-color: #fff !important;
+}
+
+.archive #header {
+	border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+/* force header background image on pages withoud header-img set */
+.to-page-heading {
+	background-image:url(../../uploads/2015/02/header-e1424101524458.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+
+/* belay that order when img is set */
+.to-page-heading.to-page-heading-img-true {
+	background: none;
+}
+
+/* Custom post types */
+.to-grid-container .to-item.blog.tall .to-item-content,
+.to-grid-container .to-item.blog.square.top .to-item-content {
+    top:0;
+}
+
+.to-grid-container .to-item.blog.Nieuws .to-item-content {
+    top:50%;
+}
+
+#footer-inner-bottom .col-5 {
+    width:57.5%;
+}
+#footer-inner-bottom .col-7 {
+    width:40.5%;
+}
+
+#footer-inner-bottom .copyright {
+    float:left;
+    clear:both;
+}
+
+#single-post-section article p a {
+    color:#e45b30;
+}
+
+
+
+@media screen and (min-width: 1005px) and (max-width:1010px) {
+    .section-container {
+        padding:0 20px;
+    }
+    .section-container h1.title {
+        padding: 0 20px;
+    }
+    #footer-inner-bottom {
+        width:910px;
+        padding:50px 40px;
+    }
+    .header-mobile #header-container {
+        min-width:0;
+        width:960px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .bookdetail {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .bookdetail {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width:1200px) {
+    .section-container {
+        max-width: 950px;
+    }
+    .bookdetail {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 479px){
+    .bookdetail .rightcolumn,
+    .authordetail .rightcolumn,
+    .bookdetail .leftcolumn,
+    .authordetail .leftcolumn  {
+        width: 100%;
+    }
+    .boekdb .etalage {
+        margin-left: 0;
+    }
+    .boekdb ul.etalage.biglist li .data {
+        padding: 0 0 0 150px;
+    }
+}
